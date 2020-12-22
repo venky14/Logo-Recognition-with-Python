@@ -26,18 +26,20 @@ python logoRec_api.py
 ```
 
 ## BFSI Logo Names
-TATA
-GODREJ
-RIL
-KOTAK_MAHINDRA_Bank
-Bank_Of_INDIA
-AXIS_Bank
-AIRTEL
-Bank_Of_BARODA
-JIO
-HDFC_Bank
-ICICI_Bank
-SBI_Bank
+```
+  TATA
+  GODREJ
+  RIL
+  KOTAK_MAHINDRA_Bank
+  Bank_Of_INDIA
+  AXIS_Bank
+  AIRTEL
+  Bank_Of_BARODA
+  JIO
+  HDFC_Bank
+  ICICI_Bank
+  SBI_Bank
+```
 
 
 
