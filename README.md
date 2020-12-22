@@ -25,6 +25,10 @@ python logoRec_api.py
 
 ```
 
+<br>
+<p><img src="https://github.com/venky14/Logo-Recognition-with-Python/blob/master/img_sample_test/Screenshot%20from%202020-08-04%2017-13-43.png?raw=true"></p>
+<br>
+
 ## BFSI Logo Names
 ```
   TATA
