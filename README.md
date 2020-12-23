@@ -21,8 +21,12 @@ wget -c https://mega.nz/folder/nLhCkBJb#vv4KYLAIfDxeRqLQ3sVgOw
 ## Quick start
 Start using custom trained logo recognition model to test predictions on input image:
 ```
-python logoRec_api.py
+setup and execute faceRec_api.py
+$ python logoRec_api.py
 
+go to localhost "http://127.0.0.1:5001/"
+
+upload image from 'img_sample_test' for testing
 ```
 
 <br>
