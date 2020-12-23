@@ -1,4 +1,4 @@
-# Computer Vision R&D - Brand Logo Recognition TF_YOLOv3
+# Computer Vision - Brand Logo Recognition | Predictive Modeling with TF_YOLOv3
 
 Darknet YOLOv3 implementation in TensorFlow 2.x for Famous Brand Logo Detection and Recognition.
 
