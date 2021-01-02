@@ -3,7 +3,7 @@
 #   File name   : logoRec_api.py
 #   Author      : Venkatesh
 #   Created date: 2020-07-23
-#   Description : Logo object detection and recognition image example
+#   Description : Object detection and recognition API for Logo image example
 #
 #================================================================
 

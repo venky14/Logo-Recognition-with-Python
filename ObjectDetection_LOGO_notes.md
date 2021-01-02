@@ -9,45 +9,45 @@ The logo detection can be done by object detection models.  We will use PyTorch,
 
 ## Object Detection Notes ##
 
-# Pytorch AI Ecosytem
+### Pytorch AI Ecosytem
 - pytorch.org
 
-#  facebookresearch/detectron2 
+####  facebookresearch/detectron2 
 Detectron2 is FAIR's next-generation platform for object detection and segmentation. 
 https://github.com/facebookresearch/detectron2
 
-# albumentations - image augmentation library for object recognition
+#### albumentations - image augmentation library for object recognition
 https://github.com/albumentations-team/albumentations
 $ pip install albumentations
 
-# YOLOv5 
+#### YOLOv5 
 https://github.com/ultralytics/yolov5
 
 
 
 activate venv for code execution in Ubuntu Bash with Python-3.6.8
-#  source pytext_nlp/bin/activate
+$  source pytext_nlp/bin/activate
 mount C: drive folders in UbuntuBash
-# cd /mnt/c/Users/Rathod/
-# cd /mnt/d/V_Docs/Venky_Docs/
+$ cd /mnt/c/Users/Rathod/
+$ cd /mnt/d/V_Docs/Venky_Docs/
 
-# lib_setup
+### lib_setup
 - numpy
 - pytorch
 - opencv
 - Pillow
 - imageio
 
-# install python packages
+### install python packages
 > pip install opencv-python  (4.2.0)
 > pip install imageio   (2.8.0)
 
-# Tensorflow 2.2.0 setup
+### Tensorflow 2.2.0 setup
 > pip install tensorflow==2.*
 
   Successfully installed absl-py-0.9.0 astunparse-1.6.3 awscli-1.18.96 botocore-1.17.19 cachetools-4.1.1 certifi-2020.6.20 chardet-3.0.4 colorama-0.4.3 docutils-0.15.2 gast-0.3.3 google-auth-1.18.0 google-auth-oauthlib-0.4.1 google-pasta-0.2.0 grpcio-1.30.0 h5py-2.10.0 idna-2.10 importlib-metadata-1.7.0 jmespath-0.10.0 keras-preprocessing-1.1.2 markdown-3.2.2 numpy-1.19.0 oauthlib-3.1.0 opt-einsum-3.2.1 protobuf-3.12.2 pyasn1-0.4.8 pyasn1-modules-0.2.8 requests-2.24.0 requests-oauthlib-1.3.0 rsa-3.4.2 s3transfer-0.3.3 seaborn-0.10.1 tensorboard-2.2.2 tensorboard-plugin-wit-1.7.0 tensorflow-2.2.0 tensorflow-estimator-2.2.0 termcolor-1.1.0 wget-3.2 wrapt-1.12.1 zipp-3.1.0
 
-# download Google Images using Python
+### download Google Images using Python
 
 $ pip install google_images_download
 
@@ -55,7 +55,7 @@ $ googleimagesdownload -k "hdfc bank logo" -l 10 -o /home/cprbiu/cv_projects/log
 
 ## LabelImg is a graphical image annotation tool. for Object Detection Task
 https://github.com/tzutalin/labelImg
-# Installation
+#### Installation
 Python 3 + Qt5 (Recommended)
 
   sudo apt-get install pyqt5-dev-tools
@@ -94,7 +94,7 @@ DESCRIPTION:
     Detailed help for each command is available with 'ngrok help <command>'.
     Open http://localhost:4040 for ngrok's web interface to inspect traffic.
 
-# secure tunneling with ngrok
+## secure tunneling with ngrok
 $ ngrok http -host-header=rewrite localhost:5001
 
 
@@ -114,21 +114,21 @@ yolov3.weights                   100%[==========================================
 
 2020-07-09 18:25:54 (57.6 KB/s) - ‘model_data/yolov3.weights’ saved [248007048/248007048]
 
-# Check GPU support with TF
+## Check GPU support with TF
 Test if TensorFlow works with gpu for you, in output should see similar results:
 
   import tensorflow as tf
   print(tf.__version__)
   tf.test.gpu_device_name()
 
-  ## Training with Yolov3
-  Error
+## Training with Yolov3
+Error
 
-  ValueError: not enough values to unpack (expected 3, got 0) #222
+ValueError: not enough values to unpack (expected 3, got 0) #222
 
-  The problem is because no object was detected during the first iteration. You have several ways to solve the problem: 
-  1. do not execute the validation process during the first iteration; 
-  2. Increase the number of validation set, or just copy some from the train set. 
+The problem is because no object was detected during the first iteration. You have several ways to solve the problem: 
+1. do not execute the validation process during the first iteration; 
+2. Increase the number of validation set, or just copy some from the train set. 
   3. Load the pre-trained darknet weights.
 
 ## Tensorboard log check
@@ -151,8 +151,9 @@ python detect_mnist.py
 ```
 
 
-## Testing and Evaluation LogoRec model with augmented dataset - 20/07/2020
-- total_val_loss:   0.28 (model almost overfitted I guess)
+### Testing and Evaluation LogoRec model with augmented dataset - 20/07/2020
+```
+total_val_loss:   0.28 (model almost overfitted I guess)
 epoch:99 step:  467/471, lr:0.000001, giou_loss:   0.00, conf_loss:   0.00, prob_loss:   0.22, total_loss:   0.22
 epoch:99 step:  468/471, lr:0.000001, giou_loss:   0.00, conf_loss:   0.00, prob_loss:   0.21, total_loss:   0.21
 epoch:99 step:  469/471, lr:0.000001, giou_loss:   0.00, conf_loss:   0.00, prob_loss:   0.24, total_loss:   0.24
@@ -162,3 +163,4 @@ epoch:99 step:    1/471, lr:0.000001, giou_loss:   0.00, conf_loss:   0.00, prob
 
 
 giou_val_loss:   0.01, conf_val_loss:   0.04, prob_val_loss:   0.23, total_val_loss:   0.28
+```
