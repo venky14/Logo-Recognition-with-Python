@@ -50,5 +50,8 @@ upload image from 'img_sample_test' for testing
   SBI_Bank
 ```
 
+#### Train with YoloV3
+- to build your own logo recognition model follow training script from `yolov3` Folder and update configs.py
+
 
 
